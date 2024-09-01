@@ -1,0 +1,19 @@
+// @include
+
+@mixin border-grey {
+  border-width: 2px;
+  border-style: outset;
+  border-color: $grey;
+}
+
+@mixin border-dark-blue {
+  border-width: 2px;
+  border-style: inset;
+  border-color: $dark-blue;
+}
+
+@mixin border-light-grey {
+  border-width: 2px;
+  border-style: outset;
+  border-color: $light-grey;
+}

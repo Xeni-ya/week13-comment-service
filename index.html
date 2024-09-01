@@ -3,28 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/style.css">
   <title>Сервис комментариев со спам фильтром</title>
 </head>
 <body>
   <main class="main">
     <h1 class="title">Сервис комментариев со спам фильтром</h1>
+
     <section class="section-container">
-      <form method="post" autocomplete="on" class="form">
+      <div class="wrap">
         <h2 class="subtitle">Оставьте ваш комментарий</h2>
+        <div class="inner">x</div>
+      </div>
+      
+      <form method="post" autocomplete="on" class="form-inner">
         <label for="username">Введите ваше имя:</label>
-        <input type="text">
-        <label for="link">Введите ссылку вашего аватара</label>
-        <input type="text">
+        <input type="text" id="username" name="username" autofocus required>
+
+        <label for="link">Введите ссылку вашего аватара:</label>
+        <input type="text" id="link" name="link" required>
+
         <label for="comment">Оставьте комментарий:</label>
-        <textarea id="story" name="story" rows="5" cols="33"></textarea>
+        <textarea id="comment" name="comment" rows="5" cols="33" required></textarea>
+
         <input type="submit" value="Отправить" class="submit">
       </form>
     </section>
 
     <section class="section-container">
-      <h2 class="subtitle">Чат</h2>
-      <div></div>
+      <div class="wrap">
+        <h2 class="subtitle">Чат</h2>
+        <div class="inner">x</div>
+      </div>
+      <div class="section-container "></div>
     </section>
   </main>
 </body>

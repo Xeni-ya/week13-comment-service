@@ -1,23 +1,68 @@
 .main {
   @extend %container;
 }
+
 .title {
-
-}
-
-.section-container {
-  display: grid;
-  grid-template-columns: 2;
-}
-.form {
-  position: relative;
-  max-width: 400px;
-  padding: 60px 50px;
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
 }
 
-.subtitle {
-} 
-.submit {
+.section-container {
+  background-color: $grey;
+  max-width: 400px;
+  width: 100%;
+  padding: 5px;
+  margin-top: 50px;
+  @include border-light-grey;
+}
 
+.wrap {
+  background-color: $dark-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3px;
+  @include border-dark-blue;
+}
+
+.subtitle {
+  color: $wight;
+  font-size: 1em;
+}
+
+.inner{
+  background-color: $grey;
+  margin: 3px;
+  height: 15px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+	border-style: outset;
+	border-color: $grey;
+}
+
+.form-inner {
+  background-color: $grey;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  @include border-light-grey;
+}
+
+label {
+  margin-top: 15px;
+}
+
+#username, #link, #comment {
+  width: 320px;
+} 
+
+.submit {
+  margin: 15px 0px 10px 0px;
+  background-color: $grey;
+  @include border-light-grey;
 }
