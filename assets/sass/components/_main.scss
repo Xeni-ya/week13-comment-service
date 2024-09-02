@@ -41,6 +41,7 @@
 .subtitle {
   color: $wight;
   font-size: 1em;
+  font-weight: bold;
 }
 
 .inner{
@@ -70,7 +71,7 @@ label {
 }
 
 #username, #link, #comment {
-  width: 320px;
+  max-width: 320px;
 } 
 
 .submit {
@@ -78,4 +79,5 @@ label {
   padding: 3px;
   background-color: $grey;
   @include border-light-grey;
+  cursor: pointer;
 }
