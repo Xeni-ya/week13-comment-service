@@ -1,0 +1,185 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ELGR" 1, "ELSH" 2;
+}
+
+body {
+  background-color: #008081;
+}
+
+.main {
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+@media screen and (max-width: 767px) {
+  .main {
+    padding: 0 20px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.title > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.section__container {
+  background-color: #c7c7c8;
+  max-width: 400px;
+  width: 100%;
+  padding: 5px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #d6d6d6;
+}
+
+.wrap {
+  background-color: #03007b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: #03007b;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.inner {
+  background-color: #c7c7c8;
+  margin: 3px;
+  height: 15px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-style: outset;
+  border-color: #c7c7c8;
+}
+
+.form-inner {
+  background-color: #c7c7c8;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #d6d6d6;
+}
+
+label {
+  margin-top: 15px;
+}
+
+#username, #link, #comment {
+  max-width: 320px;
+}
+
+.submit {
+  margin: 15px 0px 10px 0px;
+  padding: 3px;
+  background-color: #c7c7c8;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #d6d6d6;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #c7c7c8;
+  width: 100%;
+  max-height: 42px;
+  padding: 3px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #d6d6d6;
+  display: flex;
+  justify-content: space-between;
+  position: fixed; /* Подвал как приклеенный */
+  bottom: 0; /* Фиксация снизу */
+  left: 0; /* К началу слева */
+  right: 0; /* Без отступов справа */
+  height: 50px; /* Задаем высоту */
+}
+
+.footer-start {
+  background-color: #c7c7c8;
+  margin: 0px 5px 0px 0px;
+  padding: 5px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #d6d6d6;
+  display: flex;
+  align-items: center;
+}
+
+.footer-inner {
+  display: flex;
+  position: relative;
+  right: 25%;
+}
+.footer-inner .footer-inner__comment, .footer-inner .footer-inner__chat {
+  background-color: #c7c7c8;
+  width: 300px;
+  margin: 0px 5px 0px 0px;
+  padding: 5px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #d6d6d6;
+  display: flex;
+  align-items: center;
+}
+
+.footer-time {
+  background-color: #c7c7c8;
+  max-width: 125px;
+  width: 100%;
+  padding: 5px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: #d6d6d6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-start__img,
+.footer-comment__img,
+.footer-chat__img,
+.footer-time__img {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
