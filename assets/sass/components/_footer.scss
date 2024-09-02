@@ -1,0 +1,52 @@
+.footer {
+  background-color: $grey;
+  width: 100%;
+  max-height: 42px;
+  padding: 3px;
+  @include border-light-grey;
+  display: flex;
+  justify-content: space-between
+}
+
+.footer-start {
+  background-color: $grey;
+  margin: 0px 5px 0px 0px;
+  padding: 5px;
+  @include border-light-grey;
+  display: flex;
+  align-items: center;
+}
+
+.footer-inner {
+  display: flex;
+  position: relative;
+  right: 25%;
+
+  .footer-inner__comment, .footer-inner__chat {
+    background-color: $grey;
+    width: 300px;
+    margin: 0px 5px 0px 0px;
+    padding: 5px;
+    @include border-light-grey;
+    display: flex;
+    align-items: center;
+  } 
+}
+
+.footer-time {
+  background-color: $grey;
+  max-width: 125px;
+  width: 100%;
+  padding: 5px;
+  @include border-light;
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+}
+
+.footer-start__img, 
+.footer-comment__img, 
+.footer-chat__img, 
+.footer-time__img {
+  @include icon;
+}

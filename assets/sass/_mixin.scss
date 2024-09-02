@@ -17,3 +17,15 @@
   border-style: outset;
   border-color: $light-grey;
 }
+
+@mixin border-light {
+  border-width: 2px;
+  border-style: inset;
+  border-color: $light-grey;
+}
+
+@mixin icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}

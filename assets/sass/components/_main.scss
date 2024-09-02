@@ -8,12 +8,24 @@
   margin-top: 50px;
 }
 
-.section-container {
+.title > div {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0 15px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.section__container {
   background-color: $grey;
   max-width: 400px;
   width: 100%;
   padding: 5px;
-  margin-top: 50px;
   @include border-light-grey;
 }
 
@@ -63,6 +75,7 @@ label {
 
 .submit {
   margin: 15px 0px 10px 0px;
+  padding: 3px;
   background-color: $grey;
   @include border-light-grey;
 }
