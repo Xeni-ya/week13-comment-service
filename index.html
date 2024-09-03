@@ -48,7 +48,7 @@
           <label for="comment">Оставьте комментарий:</label>
           <textarea id="comment" name="comment" rows="5" cols="33" required></textarea>
 
-          <input type="submit" value="Отправить" class="submit">
+          <input type="submit" value="Отправить" class="submit" onclick="addComment()">
         </form>
       </div>
 
@@ -57,7 +57,7 @@
           <h2 class="subtitle">Чат</h2>
           <div class="inner">x</div>
         </div>
-        <div></div>
+        <div id="chat"></div>
       </div>
     </section>
   </main>
@@ -85,5 +85,7 @@
       19:45
     </div>
   </footer>
+
+  <script src="./assets/script/script.js"></script>
 </body>
 </html>
