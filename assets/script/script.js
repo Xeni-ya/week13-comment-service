@@ -11,19 +11,17 @@
 function checkSpam(str) {
   return str.replace(/viagra/gi, '***').replace(/xxx/gi, '***');
 }
-//const text = "   Пример текста с пробелами   ";
-//const trimmedText = text.trim();
-//.toLowerCase();
-//.replace();
 
 function addComment() {
   const usernameInput = document.getElementById('username');
   const linkInput = document.getElementById('link');
   const commentInput = document.getElementById('comment');
-  const chatInput = document.getElementById('chat');
-
-  const username = username.value;
-  const link = linkInput.value.trim();
-  const chat = checkSpam(chatInput.value);
+  const button = document.querySelector('.submit');
+  const chat = document.getElementById('chat');
+    
+  const textComment = usernameInput.value;
+//checkSpam();
+  chat.innerText = console.log('textComment')
 }
+//button.EventListener
 addComment();
